@@ -1,6 +1,6 @@
 package ed;
 
-public class aluno {
+public class Aluno {
 
     private String nome;
 
@@ -12,12 +12,12 @@ public class aluno {
         return nome;
     }
 
-    @Override
-    public boolean equals(Object ) {
-        Aluno outro = (aluno) obj;
-        return outro.getNome().equals(this.nome);
-    }
-
+   @Override
+public boolean equals(Object obj) {
+	   Aluno outro = (Aluno) obj;
+       return outro.getNome().equals(this.nome);
+	
+}
     @Override
     public String toString() {
         return super.toString();

@@ -1,0 +1,3 @@
+module ed {
+	exports main;
+}

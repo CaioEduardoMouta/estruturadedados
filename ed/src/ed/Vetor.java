@@ -1,5 +1,7 @@
 package ed;
 
+import java.util.Arrays;
+
 public class Vetor {
 
     private Aluno[] alunos = new Aluno[100];
@@ -44,7 +46,7 @@ public class Vetor {
 
     public Aluno pega(int posicao) {
         if(!posicaoOcupada(posicao)) {
-            throw new IllegalArgumentException("posição invalida")
+            throw new IllegalArgumentException("posição invalida");
         }
         return alunos[posicao];
     }
@@ -61,7 +63,7 @@ public class Vetor {
     public boolean contem(Aluno aluno) {
         for(int i = 0; i < totalDeAlunos; i++) {
             if(aluno.equals(alunos[i])) {
-                return true
+                return true;
             }
 
         }
