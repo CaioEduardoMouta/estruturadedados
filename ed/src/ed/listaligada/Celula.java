@@ -9,15 +9,18 @@ public class Celula {
     private Celula proximo;
     
     
-	public Celula(Object elemento) {
-		this(null, elemento);
-	}
+    
+    public Celula(Object elemento) {
+    	this(null,elemento);
+    }
 	
-	public Celula(Object elemento, Celula proximo) {
-		
+	public Celula(Celula proximo, Object elemento) {
+		super();
 		this.elemento = elemento;
+		
 		this.proximo = proximo;
 	}
+
 	public Object getElemento() {
 		return elemento;
 	}

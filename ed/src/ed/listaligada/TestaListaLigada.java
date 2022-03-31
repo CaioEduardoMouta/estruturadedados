@@ -17,13 +17,26 @@ public class TestaListaLigada {
 		
 		Object x = lista.pega(2);
 		System.out.println(x);
-		
-		System.out.println(lista.tamanho());
+
 		
 		lista.removeDoComeco();
 		
 		System.out.println(lista);
-		System.out.println(lista.tamanho());
+	
+		lista.removeDoFim();
+		System.out.println(lista);
+		
+		lista.adiciona("Jose");
+		lista.adiciona("Joao");
+		
+		System.out.println(lista);
+		
+		lista.remove(1);
+		
+		System.out.println(lista);
+		System.out.println(lista.contem("Marlene"));
+		
+		
 
 		
 	}
