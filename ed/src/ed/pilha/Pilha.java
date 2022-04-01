@@ -6,15 +6,20 @@ import java.util.List;
 public class Pilha {
 
 	private List<String> nomes = new LinkedList<String>();
-	public void insere(String nome) {
-		
+	public void push(String nome) {
+		nomes.add(nome);
 	}
 	
-	public String remove() {
-		return "";
+	public String pop() {
+		return nomes.remove(nomes.size()-1);
 	}
 	
 	public boolean vazia() {
-		return false;
+		return nomes.isEmpty();
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString();
 	}
 }
