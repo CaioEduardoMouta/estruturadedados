@@ -41,12 +41,12 @@ public class Vetor {
     }
 
     private boolean posicaoOcupada(int posicao)  {
-        posicao >= 0 && posicao < totalDeAlunos;
+        return posicao >= 0 && posicao < totalDeAlunos;
     }
 
     public Aluno pega(int posicao) {
         if(!posicaoOcupada(posicao)) {
-            throw new IllegalArgumentException("posiÃ§Ã£o invalida");
+            throw new IllegalArgumentException("posição invalida");
         }
         return alunos[posicao];
     }

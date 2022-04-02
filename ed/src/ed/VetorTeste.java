@@ -1,12 +1,11 @@
 package ed;
 
-import java.util.ArrayList;
 
-public VetorTeste {
+public class VetorTeste {
 
 public static void main(String[]args){
-    Aluno a1 = new Aluno("Jos√©");
-    Aluno a2 = new Aluno("Jo√£o");
+    Aluno a1 = new Aluno("Jo„o");
+    Aluno a2 = new Aluno("JosÈ");
 
     Vetor lista = new Vetor();
 
@@ -26,13 +25,13 @@ public static void main(String[]args){
     lista.remove(1);
     System.out.println(lista);
 
-    for(int i = 0; i  300; i++) {
+    for(int i = 0; i < 300; i++) {
         Aluno y = new Aluno("Joao" + 1);
         lista.adiciona(y);
         }
     System.out.println(lista);
 
-    new ArrayList<Aluno> listaDoJava = new ArrayLista<Aluno>();
+   
 
     }
 }
